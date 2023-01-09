@@ -1,0 +1,24 @@
+
+
+<div class="box">
+<h3 style="text-align:center">Employee list</h3>
+<table align="center"width="70%"id="customer">
+<tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Department</th>
+    <th>Contact</th>
+    <th>Edit</th>
+    <th>Delete</th>
+</tr>
+    <tr *ngFor="let e of emp">
+        <td>{{e.stnm}}</td>  
+        <td>{{e.location}}</td>  
+        <td>{{e.dept}}</td>  
+        <td>{{e.contact}}</td>  
+        <td> <button (click)="update(e._id)"class="btn btn-primary">Edit</button></td>  
+        <td> <button (click)="delus(e._id)"class="btn btn-primary">Delete</button></td>  
+          
+    </tr>
+</table>
+</div>

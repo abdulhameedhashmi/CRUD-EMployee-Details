@@ -1,0 +1,38 @@
+<!--<form [formGroup]="newempReg" (ngSubmit)="regemp()">
+    Nmae:<input type="text" formControlName="stnm"placeholder="enter the employee name"><br><br>
+    Department:<input type="text" formControlName="dept"placeholder="enter the department"><br><br>
+    Location:<input type="text" formControlName="location"placeholder="Location"><br><br>
+    Email:<input type="email" formControlName="email"placeholder="enter email_Id"><br><br>
+    Contact:<input type="number" formControlName="contact"placeholder="contact_no"><br><br>
+    CGPA:<input type="number" formControlName="cgpa"placeholder="enter the cgpa number"><br><br>
+    <button type="submit">Register</button>
+</form>!-->
+
+<form [formGroup]="newempReg" (ngSubmit)="regemp()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="text" formControlName="stnm" class="form-control" id="name" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Department</label>
+      <input type="text" formControlName="dept" class="form-control" id="dept">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Location</label>
+        <input type="text" formControlName="location" class="form-control" id="location">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Email</label>
+        <input type="email" formControlName="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contact</label>
+        <input type="number" formControlName="contact" class="form-control" id="contact">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">CGPA</label>
+        <input type="number" formControlName="cgpa" class="form-control" id="dept">
+      </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
